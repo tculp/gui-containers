@@ -1,0 +1,4 @@
+#!/command/with-contenv sh
+
+s6-setuidgid user
+/novnc/utils/novnc_proxy --vnc localhost:5900 --listen 0.0.0.0:8080

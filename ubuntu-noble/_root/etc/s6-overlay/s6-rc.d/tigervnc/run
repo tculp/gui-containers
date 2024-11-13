@@ -1,0 +1,3 @@
+#!/command/with-contenv sh
+
+s6-setuidgid user /usr/bin/Xvnc "$DISPLAY" -geometry "${SCR_WIDTH}x${SCR_HEIGHT}" -depth 32 -SecurityTypes none -nolock
